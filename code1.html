@@ -1,0 +1,134 @@
+<!-- HTML Structure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home Control Panel</title>
+  <link rel="stylesheet" href="code.css">
+
+
+</head>
+<body>
+  <header>
+    <h1>Smart Home Control Panel</h1>
+  </header>
+  <main>
+    <div class="appliances">
+    <section id="fan-controls" class="control-panel">
+      <p class="device-title">Fan Controls</p>
+      <div class="channelpic"> <img class="profile" src="3060734.png"></div>
+      <div class="fan">
+        <button id="fan-on">Turn On</button>
+        <button id="fan-off">Turn Off</button>
+        <br>
+        <div class="fan-set">
+            <label for="speed">Set Speed:</label>
+            <input type="number" id="speed" min="1" max="5" value="5">
+            <br>
+            <br>
+            <button id="set-speed">Set</button>
+        </div>
+      </div>
+
+    <script>
+        document.getElementById('fan-on').addEventListener('click', function() {
+          alert("Fan turned on");
+        });
+        document.getElementById('fan-off').addEventListener('click', function() {
+          alert("Fan turned off");
+        });
+        document.getElementById('set-speed').addEventListener('click', function() {
+          var temperature = document.getElementById('speed').value;
+          alert('Speed set to ' + speed );
+        });
+    </script> 
+    </section>
+    <section id="light-controls" class="control-panel">
+      <p class="device-title">Light Controls</p>
+      <div class="channelpic"> <img class="profile" src="light-lightbulb-icon.webp"></div>
+      <div class="lights">
+        <div class="divi1"><button id="light-on">Turn On</button></div>
+        <div class="divi"><button id="light-off">Turn Off</button></div>
+      </div>
+    </section>
+    <div class="control-panel">
+        <h2>A.C Control</h2>
+        <button id="ac-on">Turn On</button>
+        <button id="ac-off">Turn Off</button>
+        <br>
+        <div class="fan-set">
+            <label for="temperature">Set Temperature:</label>
+            <input type="number" id="temperature" min="16" max="30" value="22">
+            <br>
+            <br>
+            <button id="ac-set">Set</button>
+        </div>
+      </div>
+    
+      <script>
+        document.getElementById('ac-on').addEventListener('click', function() {
+          alert('AC turned on');
+        });
+    
+        document.getElementById('ac-off').addEventListener('click', function() {
+          alert('AC turned off');
+        });<br></br>    
+    
+        document.getElementById('set-temperature').addEventListener('click', function() {
+          var temperature = document.getElementById('temperature').value;
+          alert('Temperature set to ' + temperature + '°C');
+        });
+      </script>
+        </section>
+    </div>
+    <section class="led">
+
+  <h1>RGB LED Color Selector</h1>
+  
+  <label for="red">Red:</label>
+  <input type="range" id="red" min="0" max="255" value="0">
+  <br>
+  
+  <label for="green">Green:</label>
+  <input type="range" id="green" min="0" max="255" value="0">
+  <br>
+  
+  <label for="blue">Blue:</label>
+  <input type="range" id="blue" min="0" max="255" value="0">
+  <br>
+  
+  <div class="color-box" id="color-box"></div>
+
+  <script>
+    const redSlider = document.getElementById("red");
+    const greenSlider = document.getElementById("green");
+    const blueSlider = document.getElementById("blue");
+    const colorBox = document.getElementById("color-box");
+
+    function updateColor() {
+      const red = redSlider.value;
+      const green = greenSlider.value;
+      const blue = blueSlider.value;
+
+      const color = `rgb(${red}, ${green}, ${blue})`;
+      colorBox.style.backgroundColor = color;
+    }
+
+    redSlider.addEventListener("input", updateColor);
+    greenSlider.addEventListener("input", updateColor);
+    blueSlider.addEventListener("input", updateColor);
+
+    updateColor();
+          </script>
+    </section>
+    </main>
+    </body>
+
+    
+
+    <footer>
+        <p>&copy; code crushers </p>
+    </footer>
+    <script src="code.js"></script>
+</html>

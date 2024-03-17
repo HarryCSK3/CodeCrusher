@@ -1,0 +1,128 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: lightblue;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  button {
+    display: inline-block;
+    height: 70px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 150px;
+    border: solid;
+    border-radius: 75px;
+    cursor: pointer;
+    background-color: lightcyan;
+    color: black;
+    font-size: 16px;
+    vertical-align: top;
+    border-color: black;
+  }
+  
+  button:hover {
+    background-color: lightgray;
+    
+  }
+  input[type="range"] {
+    width: 80%;
+    margin: 10px 0;
+  }
+  footer {
+    background-color: lightblue;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  input[type="range"] {
+    width: 80%;
+    margin: 10px 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+.fan-set{
+  text-align: center;
+}
+.color-box {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+.color-box {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+
+.divi1{
+  display: inline-block;
+  
+}
+.divi{
+  display: inline-block;
+}
+.channelpic{
+  width: 50px;
+  vertical-align:middle; 
+  display: inline-block;
+}
+.profile{
+  width: 50px;
+}
+.device-title{
+  font-size: 24px;
+  font-weight: bold;
+  display:inline-block;
+  text-align: top;
+}
+.control-panel {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  display: inline-block;
+  text-align: top;
+}
+.led-slider{
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 200px;
+}
+.colorbox{
+  display: inline-block;
+}
+.appliances{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
