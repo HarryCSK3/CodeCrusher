@@ -1,2 +1,0 @@
-# CodeCrusher
-For hackathon
